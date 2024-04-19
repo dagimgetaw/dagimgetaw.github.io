@@ -515,7 +515,7 @@ header ul li a {
 .project__page__two {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 6rem;
+  padding: 3rem 1rem;
   gap: 2rem;
 }
 .project__first,
@@ -574,7 +574,6 @@ header ul li a {
   .project__page__two {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     padding: 3rem 1rem;
   }
   .project__page .box img {
@@ -594,5 +593,53 @@ header ul li a {
   }
   .project__title {
     font-size: 2em;
+  }
+}
+/* ------------------------------------------------ */
+.contact__title {
+  color: var(--clr-bg-dark);
+  text-align: center;
+  font-size: 3em;
+  padding-top: 5rem;
+}
+.contact__para {
+  color: var(--clr-bg-dark);
+  text-align: center;
+  font-size: 1.6em;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+.contact__page {
+  text-align: center;
+}
+.contact__page hr {
+  width: 50%;
+  margin: 2rem auto;
+  color: var(--clr-bg-dark);
+}
+.contact__page i {
+  font-size: 3em;
+  padding: 2rem;
+  color: var(--clr-bg-dark);
+}
+.phone__number {
+  text-align: center;
+  color: var(--clr-bg-dark);
+}
+footer p {
+  text-align: center;
+  color: var(--clr-bg-dark);
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 460px) {
+  .contact__title {
+    font-size: 2em;
+  }
+  .contact__para {
+    font-size: 1.4em;
+  }
+  .contact__page i {
+    font-size: 2.4em;
   }
 }
