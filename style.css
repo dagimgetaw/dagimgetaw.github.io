@@ -14,6 +14,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--clr-bg-light);
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -355,3 +356,106 @@ header ul li a {
   }
 }
 /* ---------------------------------------------- */
+.skill__page {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem 7rem;
+}
+.skill__title {
+  color: var(--clr-bg-dark);
+  text-align: center;
+  font-size: 3em;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.box h2 {
+  color: var(--clr-bg-dark);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.skill__box .box hr {
+  margin: 0 2rem 1rem;
+  color: var(--clr-bg-dark);
+}
+.box .skill p:first-child {
+  color: black;
+  margin-left: 7rem;
+}
+.box .skill p:last-child {
+  color: var(--clr-bg-dark);
+  font-size: 0.8em;
+  padding-left: 1.5rem;
+  margin-left: 7rem;
+}
+@media (max-width: 1100px) {
+  .box .skill p:first-child {
+    margin-left: 6rem;
+  }
+  .box .skill p:last-child {
+    padding-left: 1.5rem;
+    margin-left: 6rem;
+  }
+}
+@media (max-width: 970px) {
+  .box .skill p:first-child {
+    margin-left: 4rem;
+  }
+  .box .skill p:last-child {
+    padding-left: 1.5rem;
+    margin-left: 4rem;
+  }
+}
+@media (max-width: 800px) {
+  .box .skill p:first-child {
+    margin-left: 3rem;
+  }
+  .box .skill p:last-child {
+    padding-left: 1.5rem;
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .box .skill p:first-child {
+    margin-left: 1rem;
+  }
+  .box .skill p:last-child {
+    padding-left: 1.5rem;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 620px) {
+  .skill__page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 7rem;
+  }
+  .box .skill p:first-child {
+    margin-left: 6rem;
+  }
+  .box .skill p:last-child {
+    padding-left: 1.5rem;
+    margin-left: 6rem;
+  }
+}
+@media (max-width: 585px) {
+  .box .skill p:first-child {
+    margin-left: 4rem;
+  }
+  .box .skill p:last-child {
+    padding-left: 1.5rem;
+    margin-left: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .skill__page {
+    padding: 1rem 2rem;
+  }
+  .box .skill p:first-child {
+    margin-left: 2rem;
+  }
+  .box .skill p:last-child {
+    padding-left: 1.5rem;
+    margin-left: 2rem;
+  }
+}
