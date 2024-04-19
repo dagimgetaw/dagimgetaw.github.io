@@ -3,11 +3,105 @@
   --clr-bg-light: #eeeeee;
   --clr-bg-dark: #35374b;
 }
-
+.dark-theme {
+  --clr-bg-dark: #eeeeee;
+  --clr-bg-light: #35374b;
+}
 * {
   padding: 0;
   margin: 0;
 }
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--clr-bg-light);
+}
+a {
+  text-decoration: none;
+  color: var(--clr-bg-dark);
+  cursor: pointer;
+}
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  position: fixed;
+  padding: 2rem 0;
+}
+header p {
+  font-size: 1.8em;
+  justify-content: start;
+  color: var(--clr-bg-dark);
+  padding-left: 3rem;
+}
+header ul {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  font-size: 1.3em;
+}
+#changeColor {
+  display: flex;
+  justify-content: end;
+  font-size: 2em;
+  cursor: pointer;
+  padding-right: 4rem;
+  color: var(--clr-bg-dark);
+}
+.bar {
+  display: none;
+}
+@media (max-width: 1000px) {
+  header p {
+    font-size: 1.6em;
+  }
+  header ul li a {
+    font-size: 1.1em;
+  }
+  #changeColor {
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 860px) {
+  header ul li {
+    display: none;
+  }
+  header p {
+    text-align: center;
+  }
+  #toggle {
+    justify-content: end;
+    display: flex;
+  }
+  #bar {
+    display: flex;
+    justify-content: end;
+    font-size: 2em;
+    cursor: pointer;
+    padding-right: 4rem;
+    color: var(--clr-bg-dark);
+  }
+  #changeColor {
+    padding-right: 0;
+  }
+  /* position: absolute;
+  right: 8rem; */
+  .bar {
+    display: inline-block;
+    justify-content: end;
+    cursor: pointer;
+    padding-left: 2rem;
+    color: var(--clr-bg-dark);
+  }
+}
+@media (max-width: 550px) {
+  header p {
+    font-size: 1.4em;
+    padding-left: 2rem;
+    display: block ruby;
+  }
 }
