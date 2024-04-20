@@ -22,12 +22,13 @@ a {
   cursor: pointer;
 }
 header {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-  position: fixed;
-  padding: 2rem 0;
   background-color: var(--clr-bg-light);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
 }
 header p {
   font-size: 1.8em;
@@ -69,9 +70,42 @@ header ul li a {
   }
 }
 @media (max-width: 860px) {
-  header ul li {
+  /* header ul li {
     display: none;
+  } */
+  /* ---------------------------------------------- */
+  header ul {
+    position: absolute;
+    top: 100%;
+    right: 0rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    width: 30rem;
+    display: inline;
+    text-align: center;
+    padding-top: 2rem;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 30vh;
+    border: 1px solid var(--clr-bg-dark);
+    transform: scale(0);
+    opacity: 0;
+    transition: none;
+    transform-origin: top right;
   }
+  header ul li {
+    padding: 1rem 0rem;
+  }
+  header ul li a {
+    color: var(--clr-bg-dark);
+    font-weight: bold;
+  }
+  header ul.active {
+    transform: scale(1);
+    opacity: 1;
+    transform-origin: 0.2s ease-out;
+  }
+  /* ---------------------------------------------- */
   header p {
     text-align: center;
   }

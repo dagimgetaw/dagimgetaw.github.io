@@ -8,9 +8,11 @@ moon.addEventListener("click", () => {
 });
 
 const menu = document.querySelector(".bar");
+const nav = document.querySelector("ul");
 menu.addEventListener("click", () => {
   menu.classList.toggle("fa-bars");
   menu.classList.toggle("fa-xmark");
+  nav.classList.toggle("active");
 });
 
 const countersEl = document.querySelectorAll(".counter");
