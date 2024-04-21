@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #35374b;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  align-items: center;
+}
+
+#timer {
+  font-size: 5em;
+  font-weight: 700;
+  /* color: #35374b; */
+  width: 585px;
+  width: 600px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: transparent;
+  /* color: #35374b;
+  border: 1px solid #35374b; */
+  font-size: 1.4em;
+  padding: 0.5rem 3rem;
+  margin: 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+@media (max-width: 800px) {
+  #timer {
+    font-size: 4rem;
+    width: 350px;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+}
+.input {
+  visibility: hidden;
+}
+
+.label {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  background-color: lightgray;
+  border-radius: 20px;
+  cursor: pointer;
+  right: 6rem;
+  top: 3rem;
+}
+
+.circle {
+  width: 34px;
+  background-color: white;
+  height: 34px;
+  border-radius: 50%;
+  top: 3px;
+  position: absolute;
+  left: 3px;
+  animation: toggleOff 0.4s linear forwards;
+}
+
+.input:checked + .label {
+  background-color: white;
+}
+
+.input:checked + .label .circle {
+  animation: toggleOn 0.4s linear forwards;
+  background-color: #35374b;
+}
+@media (max-width: 800px) {
+  body {
+    min-height: 75vh;
+  }
+  .label {
+    right: 2rem;
+  }
+}

@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --clr-one: #222831;
+  --clr-two: #f79327;
+  --clr-font: #eeeeee;
+  --clr-title: wheat;
+  --clr-muted: #dce1eb;
+}
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+html {
+  font-size: 14px;
+}
+body {
+  background: var(--clr-one);
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: var(--clr-font);
+  text-decoration: none;
+}
+.container {
+  margin: 0 5rem;
+}
+.nav {
+  display: flex;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  background: var(--clr-one);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.nav .nav__logo {
+  display: flex;
+}
+.nav .nav__logo span {
+  color: var(--clr-two);
+  padding-top: 1rem;
+  cursor: pointer;
+}
+.nav .nav__logo h2 {
+  color: var(--clr-two);
+  padding: 1rem;
+  cursor: pointer;
+}
+.nav .nav__item {
+  display: flex;
+  position: absolute;
+  right: 9rem;
+}
+.nav .nav__item ul {
+  display: flex;
+}
+.nav .nav__item ul li {
+  list-style-type: none;
+  padding: 1rem;
+}
+.nav .nav__item ul li a:hover {
+  color: var(--clr-two);
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+/* ------------------------------------------ */
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.home .home__page__left {
+  padding: 10rem 2rem;
+}
+.home .home__page__left h2 {
+  color: var(--clr-two);
+  font-size: 3em;
+}
+.home .home__page__left p {
+  color: var(--clr-font);
+  padding-top: 2rem;
+}
+button {
+  margin: 2rem 3rem;
+}
+button:hover {
+  padding: 0.8rem 4rem;
+}
+.home__btn {
+  padding: 0.5rem 3rem;
+  border: 0 solid;
+  background: var(--clr-two);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.home .home__page__left .home__btn .home__link {
+  color: var(--clr-font);
+  font-size: 1.4em;
+}
+.home .home__page__right img {
+  width: 100%;
+}
+/* ------------------------------------- */
+.about__title {
+  text-align: center;
+  color: var(--clr-two);
+  padding-bottom: 6rem;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about .about__page__right h2 {
+  font-size: 3em;
+  color: var(--clr-title);
+  padding: 2rem 0rem 0rem 0rem;
+  text-align: center;
+}
+.about .about__page__right p {
+  color: var(--clr-font);
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+.home__btn .home__link {
+  color: var(--clr-font);
+  font-size: 1.4em;
+}
+.about .about__page__left img {
+  width: 100%;
+}
+/* ------------------------------------------ */
+.menu__title__one {
+  text-align: center;
+  color: var(--clr-two);
+  padding-top: 6rem;
+}
+.menu__title__two {
+  text-align: center;
+  color: var(--clr-title);
+  padding-bottom: 6rem;
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.menu__first,
+.menu__second,
+.menu__third {
+  background: var(--clr-title);
+  border-radius: 1rem;
+  text-align: center;
+}
+.menu__first .icon,
+.menu__second .icon,
+.menu__third .icon {
+  text-align: right;
+  color: var(--clr-two);
+  cursor: pointer;
+}
+.menu__first img,
+.menu__second img,
+.menu__third img {
+  max-width: 40%;
+  height: auto;
+}
+.menu__first h2,
+.menu__second h2,
+.menu__third h2 {
+  color: var(--clr-two);
+  padding-top: 1rem;
+}
+.menu__first p,
+.menu__second p,
+.menu__third p {
+  padding-top: 1rem;
+}
+.text__muted {
+  text-decoration: line-through;
+}
+small {
+  width: 100%;
+}
+/* ----------------------------------- */
+.service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.service__first,
+.service__second,
+.service__third {
+  text-align: center;
+}
+.service__first img,
+.service__second img,
+.service__third img {
+  max-width: 20%;
+  height: auto;
+}
+.service__first h2,
+.service__second h2,
+.service__third h2 {
+  color: var(--clr-two);
+  padding: 1rem 0;
+}
+.service__first p,
+.service__second p,
+.service__third p {
+  color: var(--clr-font);
+}
+/* ---------------------------------------- */
+.contact {
+  background: var(--clr-title);
+  margin: 6rem 0;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 6rem;
+}
+/* -------------------------------------------- */
+.fotter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.fotter .menu__links ul h2,
+.fotter .our__service ul h2,
+.fotter .information ul h2,
+.fotter .contact__us ul h2 {
+  color: var(--clr-two);
+  padding-bottom: 1rem;
+}
+ul li {
+  color: var(--clr-font);
+  padding-top: 0.4rem;
+  cursor: pointer;
+}
+.fotter .contact__us ul li {
+  display: inline;
+  padding-right: 2rem;
+  font-size: 1.5em;
+}
+.last {
+  padding: 6rem 0 1rem 0;
+  text-align: center;
+  color: var(--clr-two);
+}
+/* ------------------------------------------- */
+.nav .menu {
+  display: none;
+}
+.nav .close {
+  display: none;
+}
+@media (max-width: 1053px) {
+  .home .home__page__right img {
+    padding-top: 6rem;
+  }
+  .nav .menu {
+    display: none;
+  }
+  .nav .close {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 0px 2rem;
+  }
+  .nav .nav__item {
+    display: none;
+  }
+  .nav .menu {
+    display: flex;
+    position: absolute;
+    right: 4rem;
+    padding-top: 1rem;
+    cursor: pointer;
+    color: var(--clr-two);
+  }
+  .nav .close {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .home__page__left {
+    padding: 10rem 2rem 0 2rem;
+  }
+  .nav .nav__logo span {
+    color: var(--clr-two);
+    padding-top: 1rem;
+    cursor: pointer;
+  }
+  .nav .nav__logo h2 {
+    color: var(--clr-two);
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .home {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .home .home__page__left h2 {
+    color: var(--clr-two);
+    font-size: 2em;
+    text-align: center;
+    padding-top: 4rem;
+  }
+  .home .home__page__right img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 8rem;
+    padding-bottom: 3rem;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about .about__page__right h2 {
+    font-size: 2em;
+    color: var(--clr-title);
+    padding: 2rem 0rem 0rem 0rem;
+    text-align: center;
+  }
+  .about .about__page__right p {
+    color: var(--clr-font);
+    padding-top: 2rem;
+    padding-left: 3rem;
+  }
+  .home__btn .home__link {
+    color: var(--clr-font);
+    font-size: 1.4em;
+  }
+  .about .about__page__left img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 8rem;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .service {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .fotter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    text-align: center;
+  }
+}
