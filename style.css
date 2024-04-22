@@ -186,12 +186,12 @@ header ul li a {
 .home__content button:first-child a {
   color: var(--clr-bg-dark);
 }
-.home__content button:first-child a:hover {
+.home__content button:first-child:hover a {
   color: var(--clr-bg-light);
 }
-.home__content button:first-child:hover > button:first-child a {
+/* .home__content button:first-child:hover > button:first-child a {
   color: var(--clr-bg-light);
-}
+} */
 .home__content button:last-child {
   background-color: var(--clr-bg-dark);
 }
@@ -543,7 +543,7 @@ header ul li a {
 .project__page .box button a {
   color: var(--clr-bg-dark);
 }
-.project__page .box button a:hover {
+.project__page .box button:hover a {
   color: var(--clr-bg-light);
 }
 .project__page__two {
